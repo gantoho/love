@@ -1,0 +1,27 @@
+name: GitHub Actions Build and Deploy Demo
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        persist-credentials: true
+    - name: Install and Build
+      run: |
+        yarn
+        yarn build
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v4
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        # ssh-key: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: dist
