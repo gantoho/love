@@ -9,7 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.21"
+    "@types/vue": "^2.0.0",
+    "animate.css": "^4.1.1",
+    "vue": "^3.4.21",
+    "wow.js": "^1.2.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",

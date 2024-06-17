@@ -8,9 +8,21 @@ importers:
 
   .:
     dependencies:
+      '@types/vue':
+        specifier: ^2.0.0
+        version: 2.0.0(typescript@5.4.5)
+      animate.css:
+        specifier: ^4.1.1
+        version: 4.1.1
       vue:
         specifier: ^3.4.21
         version: 3.4.29(typescript@5.4.5)
+      wow.js:
+        specifier: ^1.2.2
+        version: 1.2.2
+      wowjs:
+        specifier: ^1.1.3
+        version: 1.1.3
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.0.4
@@ -268,6 +280,10 @@ packages:
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
+  '@types/vue@2.0.0':
+    resolution: {integrity: sha512-WDElkBv/o4lVwu6wYHB06AXs4Xo2fwDjJUpvPRc1QQdzkUSiGFjrYuSCy8raxLE5FObgKq8ND7R5gSZTFLK60w==}
+    deprecated: This is a stub types definition for vuejs (https://github.com/vuejs/vue). vuejs provides its own type definitions, so you don't need @types/vue installed!
+
   '@vitejs/plugin-vue@5.0.5':
     resolution: {integrity: sha512-LOjm7XeIimLBZyzinBQ6OSm3UBCNVCpLkxGC0oWmm2YPzVZoxMsdvNVimLTBzpAnR9hl/yn1SHGuRfe6/Td9rQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -320,6 +336,9 @@ packages:
 
   '@vue/shared@3.4.29':
     resolution: {integrity: sha512-hQ2gAQcBO/CDpC82DCrinJNgOHI2v+FA7BDW4lMSPeBpQ7sRe2OLHWe5cph1s7D8DUQAwRt18dBDfJJ220APEA==}
+
+  animate.css@4.1.1:
+    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -452,6 +471,13 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+
+  wow.js@1.2.2:
+    resolution: {integrity: sha512-YTW9eiZimHCJDWofsiz2507txaPteUiQD461I/D8533AiRAn3+Y68/1LDuQ3OTgPjagGZLPYKrpoSgjzeQrO6A==}
+    deprecated: deprecated in favour of aos (Animate On Scroll)
+
+  wowjs@1.1.3:
+    resolution: {integrity: sha512-HQp1gi56wYmjOYYOMZ08TnDGpT+AO21RJVa0t1NJ3jU8l3dMyP+sY7TO/lilzVp4JFjW88bBY87RnpxdpSKofA==}
 
 snapshots:
 
@@ -590,6 +616,12 @@ snapshots:
 
   '@types/estree@1.0.5': {}
 
+  '@types/vue@2.0.0(typescript@5.4.5)':
+    dependencies:
+      vue: 3.4.29(typescript@5.4.5)
+    transitivePeerDependencies:
+      - typescript
+
   '@vitejs/plugin-vue@5.0.5(vite@5.3.1)(vue@3.4.29(typescript@5.4.5))':
     dependencies:
       vite: 5.3.1
@@ -674,6 +706,8 @@ snapshots:
       vue: 3.4.29(typescript@5.4.5)
 
   '@vue/shared@3.4.29': {}
+
+  animate.css@4.1.1: {}
 
   balanced-match@1.0.2: {}
 
@@ -805,3 +839,9 @@ snapshots:
       '@vue/shared': 3.4.29
     optionalDependencies:
       typescript: 5.4.5
+
+  wow.js@1.2.2: {}
+
+  wowjs@1.1.3:
+    dependencies:
+      animate.css: 4.1.1
