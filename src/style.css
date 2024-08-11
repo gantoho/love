@@ -14,3 +14,12 @@ img {
   vertical-align: bottom;
   -webkit-user-drag: none;
 }
+
+body {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}

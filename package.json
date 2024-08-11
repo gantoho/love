@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open --host --port 3128",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@types/vue": "^2.0.0",
+    "@vueuse/core": "^10.11.0",
     "animate.css": "^4.1.1",
     "vue": "^3.4.21",
     "wow.js": "^1.2.2"
